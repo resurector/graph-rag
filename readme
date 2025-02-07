@@ -1,0 +1,38 @@
+# GraphRAG: Neo4j + LangChain Retrieval-Augmented Generation
+
+**GraphRAG** is a Python application that:
+
+- Ingests documents (PDF, DOCX, or TXT)
+- Splits them into chunks
+- Embeds chunks with OpenAI (or Azure) embeddings
+- Stores results in a Neo4j database
+- Performs retrieval-augmented generation (RAG) via an LLM to answer questions from the ingested documents
+
+---
+
+## Features
+
+- **Document Upload**: Upload a PDF, DOCX, or TXT file.
+- **Chunking & Embeddings**: Splits text into segments and embeds them with OpenAIEmbeddings.
+- **Neo4j Storage**: Each chunk is stored in a Neo4j graph with a unique identifier.
+- **RAG Chat Interface**: Ask a question; the app retrieves relevant chunks from the database, then uses a GPT-like model to produce an answer.
+- **Gradio UI**: Simple web-based interface to handle both document processing and Q&A.
+
+---
+
+## Prerequisites
+
+1. **Python 3.8+**
+2. **Neo4j 4.x or 5.x**, with Bolt protocol enabled.  
+   - Make sure you have a running Neo4j instance at `bolt://localhost:7687` or set `NEO4J_URI` to your custom URL.
+3. **OpenAI API Key** (if using OpenAI embeddings and ChatOpenAI).  
+   - Sign up at [OpenAI](https://platform.openai.com/).
+
+---
+
+## Installation
+
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/resurector/graph-rag.git
+   cd graph-rag
