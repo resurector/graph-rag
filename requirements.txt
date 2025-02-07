@@ -1,0 +1,8 @@
+gradio==5.9.1
+langchain==0.3.11
+langchain-community==0.3.11
+neo4j==5.27.0
+openai==1.55.3
+pymupdf==1.24.14
+python-docx==1.1.2
+python-dotenv==1.0.0
