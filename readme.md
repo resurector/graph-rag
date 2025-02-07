@@ -83,6 +83,18 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### 4. Set Environment Variables
+Create a .env file (or export them manually) with the following:
+```bash
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=your_neo4j_password
+
+OPENAI_API_KEY=your_openai_api_key
+PROVIDER_TYPE=openai
+```
+Adjust values to match your Neo4j credentials.
+
 ---
 ###
 **Repository Structure**
@@ -96,6 +108,32 @@ graph-rag/
 ```
 
 
+## Usage
 
+### Start Neo4j
+Make sure your Neo4j instance is running locally or is accessible via the URL you specified in your `.env`.
+
+### Run the App
+
+```bash
+python Neo4j_app.py
+```
+
+By default, it will launch a Gradio interface at http://127.0.0.1:7860.
+
+If share=True is set in the code, you’ll also get a public shareable link.
+
+
+## Process Documents
+1. Go to the Process Document tab in the web interface.
+2. Upload a PDF, DOCX, or TXT file.
+3. Adjust chunk size/overlap if desired.
+4. Click Process File. This ingests the document into Neo4j.
+
+
+## Ask Questions
+1. Switch to the Chat tab.
+2. Enter a question. The system will retrieve relevant chunks from Neo4j, then pass them to a GPT-like model (OpenAI) for an answer.
+3. The result, plus chunk matches, are displayed in the interface.
 
 
