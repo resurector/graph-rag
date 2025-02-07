@@ -63,6 +63,9 @@
 git clone https://github.com/resurector/graph-rag.git
 cd graph-rag
 
+
+---
+
 ### 2. Create a Virtual Environment (Optional)
 ```bash
 python -m venv venv
@@ -71,12 +74,18 @@ source venv/bin/activate
 # For Windows:
 venv\Scripts\activate
 
+
+---
+
 ### 3. Install Dependencies
-```bash
+
 pip install -r requirements.txt
 
+
+---
+
 ## Repository Structure
-```bash
+
 graph-rag/
 ├── graphrag.py         # Main script with GraphRAGProcessor & Gradio UI
 ├── requirements.txt     # Python dependencies
