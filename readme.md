@@ -55,7 +55,6 @@
   Sign up at [OpenAI](https://platform.openai.com/).
 
 ---
-
 ## Installation
 
 ### 1. Clone the Repo
@@ -65,6 +64,7 @@ cd graph-rag
 
 
 ---
+
 
 ### 2. Create a Virtual Environment (Optional)
 ```bash
@@ -76,16 +76,14 @@ venv\Scripts\activate
 
 
 ---
-
 ### 3. Install Dependencies
-
+```bash
 pip install -r requirements.txt
 
 
 ---
-
-## Repository Structure
-
+**Repository Structure**
+```bash
 graph-rag/
 ├── graphrag.py         # Main script with GraphRAGProcessor & Gradio UI
 ├── requirements.txt     # Python dependencies
