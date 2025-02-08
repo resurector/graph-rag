@@ -131,7 +131,7 @@ If share=True is set in the code, you’ll also get a public shareable link.
 ---
 ```bash
 graph-rag/
-├── Neo4j_app.py.py         # Main script with GraphRAGProcessor & Gradio UI
+├── Neo4j_app.py         # Main script with GraphRAGProcessor & Gradio UI
 ├── requirements.txt     # Python dependencies
 ├── .env.example         # Example environment variables (optional)
 └── README.md            # This file
@@ -160,7 +160,6 @@ This project is licensed under the MIT License. Feel free to reuse and adapt it 
 
 ## Author / Contact
 Created by resurector.
-For questions, you can reach out via GitHub issues or personal contact.**
 
 ---
 ## Further Reading
