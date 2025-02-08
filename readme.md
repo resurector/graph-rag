@@ -93,20 +93,10 @@ NEO4J_PASSWORD=your_neo4j_password
 OPENAI_API_KEY=your_openai_api_key
 PROVIDER_TYPE=openai
 ```
+
 Adjust values to match your Neo4j credentials.
 
 ---
-###
-**Repository Structure**
----
-```bash
-graph-rag/
-├── graphrag.py         # Main script with GraphRAGProcessor & Gradio UI
-├── requirements.txt     # Python dependencies
-├── .env.example         # Example environment variables (optional)
-└── README.md            # This file
-```
-
 
 ## Usage
 
@@ -135,5 +125,49 @@ If share=True is set in the code, you’ll also get a public shareable link.
 1. Switch to the Chat tab.
 2. Enter a question. The system will retrieve relevant chunks from Neo4j, then pass them to a GPT-like model (OpenAI) for an answer.
 3. The result, plus chunk matches, are displayed in the interface.
+
+###
+**Repository Structure**
+---
+```bash
+graph-rag/
+├── Neo4j_app.py.py         # Main script with GraphRAGProcessor & Gradio UI
+├── requirements.txt     # Python dependencies
+├── .env.example         # Example environment variables (optional)
+└── README.md            # This file
+```
+
+---
+
+## Troubleshooting
+
+Neo4j Connection: If you get “Could not connect to Neo4j,” ensure NEO4J_URI, NEO4J_USERNAME, and NEO4J_PASSWORD are correct and that Neo4j is running.
+OpenAI Rate Limits: If you run many queries, you may hit OpenAI’s rate limit. Use an appropriate plan or throttle your requests.
+Node Already Exists Error: If you see a Node already exists error, confirm your code sets a unique id for each document upload, or remove the uniqueness constraint if desired.
+
+## Contributing
+Contributions and pull requests are welcome! Feel free to open an issue for any bug reports or feature requests. To contribute:
+
+## Fork the repository
+Create a new branch (git checkout -b feature/some-feature)
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature/some-feature)
+Open a Pull Request
+---
+
+#### License
+This project is licensed under the MIT License. Feel free to reuse and adapt it for your own use cases.
+
+## Author / Contact
+Created by resurector.
+For questions, you can reach out via GitHub issues or personal contact.**
+
+---
+## Further Reading
+
+- **LangChain**: [LangChain Docs](https://langchain.readthedocs.io/)
+- **Neo4j**: [Neo4j Official Site](https://neo4j.com/)
+- **OpenAI**: [OpenAI Platform](https://platform.openai.com/)
+
 
 
