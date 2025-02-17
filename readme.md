@@ -1,9 +1,18 @@
 # GraphRAG: Neo4j + LangChain Retrieval-Augmented Generation
 
+
+
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green.svg)](#prerequisites)
 [![Neo4j 4.x|5.x](https://img.shields.io/badge/Neo4j-4.x%20%7C%205.x-008CC1.svg)](https://neo4j.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-API%20Key-lightgrey)](https://platform.openai.com/)
+
+## 📖 Learn More
+
+For a detailed walkthrough on building a **GraphRAG application** with **Neo4j, OpenAI, and Gradio**, check out my Medium article:
+
+👉 **[Building a GraphRAG Application with Neo4j, OpenAI, and Gradio](https://medium.com/@rhameed79/building-a-graphrag-application-with-neo4j-openai-and-gradio-d57f
+
 
 **GraphRAG** is a Python application that:
 - Ingests documents (PDF, DOCX, or TXT),
