@@ -11,7 +11,11 @@
 
 For a detailed walkthrough on building a **GraphRAG application** with **Neo4j, OpenAI, and Gradio**, check out my Medium article:
 
-👉 **[Building a GraphRAG Application with Neo4j, OpenAI, and Gradio](https://medium.com/@rhameed79/building-a-graphrag-application-with-neo4j-openai-and-gradio-d57f
+👉 **[Building a GraphRAG Application with Neo4j, OpenAI, and Gradio](https://medium.com/@rhameed79/building-a-graphrag-application-with-neo4j-openai-and-gradio-d57f6246f9fe)**
+
+This article covers the step-by-step process of implementing a **retrieval-augmented generation (RAG) system** using a **knowledge graph**, enhancing LLM responses with structured data.
+
+Happy building! 🚀
 
 
 **GraphRAG** is a Python application that:
