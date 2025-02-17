@@ -43,7 +43,6 @@ Happy building! 🚀
 - [Repository Structure](#repository-structure)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author--Contact](#author--contact)
 - [Further-Reading](#further-reading)
 
@@ -71,7 +70,7 @@ Happy building! 🚀
 ## Installation
 
 ### 1. Clone the Repo
-```bash
+```python
 git clone https://github.com/resurector/graph-rag.git
 cd graph-rag
 ```
@@ -81,7 +80,7 @@ cd graph-rag
 
 ### 2. Create a Virtual Environment (Optional)
 
-```bash
+```python
 python -m venv venv
 # For Linux/Mac:
 source venv/bin/activate
@@ -92,13 +91,13 @@ venv\Scripts\activate
 ---
 ### 3. Install Dependencies
 
-```bash
+```python
 pip install -r requirements.txt
 ```
 
 ### 4. Set Environment Variables
 Create a .env file (or export them manually) with the following:
-```bash
+```python
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_neo4j_password
@@ -118,7 +117,7 @@ Make sure your Neo4j instance is running locally or is accessible via the URL yo
 
 ### Run the App
 
-```bash
+```python
 python Neo4j_app.py
 ```
 
@@ -168,8 +167,7 @@ Push to the branch (git push origin feature/some-feature)
 Open a Pull Request
 ---
 
-#### License
-This project is licensed under the MIT License. Feel free to reuse and adapt it for your own use cases.
+
 
 ## Author / Contact
 Created by resurector.
